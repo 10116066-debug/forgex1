@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME FORGEX</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <style>
+    /* LOADING HACKER */
+    @keyframes flicker {
+      0% { opacity: 0.1; }
+      50% { opacity: 1; }
+      100% { opacity: 0.1; }
+    }
+    @keyframes glitch {
+      0% { transform: translate(0px, 0px); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-1px, 1px); }
+      80% { transform: translate(1px, -1px); }
+      100% { transform: translate(0px, 0px); }
+    }
+
+    #loader {
+      animation: flicker 1.5s infinite;
+    }
+
+    .glitch { /* Animación desactivada para evitar temblores */ }
+
+    /* Fade-in global */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Cards anim */
+    .card-anim {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card-anim:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(0,255,0,0.4);
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-black text-white">
+
+  <!-- LOADING HACKER -->
+  <div id="loadingScreen" class="fixed inset-0 bg-black flex items-center justify-center flex-col z-50">
+    <p id="loader" class="text-green-400 text-3xl font-mono glitch">LOADING...</p>
+    <p class="text-green-300 mt-4 font-mono">Initializing terminal_</p>
+  </div>
+
+  <header class="py-8 border-b border-transparent text-center fade-in flex justify-between items-center px-6">
+    <button id="menuBtn" class="text-green-400 text-3xl md:hidden">☰</button>
+    <h1 class="text-3xl md:text-4xl font-bold glitch text-green-400 mx-auto">HOME FORGEX</h1>
+  </header>
+
+  <div class="flex fade-in" style="animation-delay:0.3s">
+    <aside id="sideMenu" class="fixed inset-y-0 left-0 w-56 bg-black border-r border-transparent p-6 transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:w-48">
+      <a href="#tops" class="block p-3 rounded-lg hover:bg-white/10 transition-all">🔥 TOPS</a>
+      <a href="#links" class="block p-3 rounded-lg hover:bg-white/10 transition-all">🏠 Home</a>
+      <a href="#info" class="block p-3 rounded-lg hover:bg-white/10 transition-all">ℹ️ INFO</a>
+    </aside>
+
+    <main class="flex-1 p-6 space-y-20">
+      <!-- TOPS -->
+      <section id="tops" class="text-center fade-in" style="animation-delay:0.5s">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 text-green-400">TOP 3</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+          <a href="https://eaglerhacks.github.io/UwUClient%20v1%20Full.html" target="_blank" class="border border-green-500/40 p-6 rounded-lg card-anim">UwUClient</a>
+          <a href="https://eaglerhacks.github.io/dragonv4.html" target="_blank" class="border border-green-500/40 p-6 rounded-lg card-anim">DragonX Client</a>
+          <a href="https://eaglerhacks.github.io/wurstX.html" target="_blank" class="border border-green-500/40 p-6 rounded-lg card-anim">WurstX Client</a>
+        </div>
+      </section>
+
+      <!-- TODOS LOS LINKS -->
+      <section id="links" class="text-center fade-in" style="animation-delay:0.8s">
+        <h2 class="text-2xl md:text-3xl font-bold mb-8 text-green-400">TODOS LOS LINKS</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          <a href="https://eaglerhacks.github.io/Shadow_Client_2.5_1.8.8_International.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">Shadow Client</a>
+          <a href="https://eaglerhacks.github.io/justinv3.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">Justin Client V3</a>
+          <a href="https://eaglerhacks.github.io/moonlight.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">MoonLight Client</a>
+          <a href="https://eaglerhacks.github.io/PiClient.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">PiClient</a>
+          <a href="https://eaglerhacks.github.io/meteor.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">Meteor Client</a>
+          <a href="https://eaglerhacks.github.io/demon.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">Demon Client</a>
+          <a href="https://eaglerhacks.github.io/justinclient.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">Justin Client V1.2.4</a>
+          <a href="https://eaglerhacks.github.io/Koneclient-1.8.8-offlineDownload.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">Koneclient 1.8.8 Offline</a>
+          <a href="https://eaglerhacks.github.io/flameclient%203.7.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">FlameClient 3.7</a>
+          <a href="https://eaglerhacks.github.io/daniel.html" target="_blank" class="border p-6 rounded-lg border-green-500/40 card-anim">Daniel Client V1</a>
+        </div>
+      </section>
+
+      <!-- INFO -->
+      <section id="info" class="max-w-3xl mx-auto space-y-6 fade-in" style="animation-delay:1.1s">
+        <h2 class="text-2xl md:text-3xl font-bold text-green-400 glitch">Información que debes tener en cuenta ⚠️</h2>
+        <p>Este contenido es únicamente educativo. No promovemos el uso de hacks en servidores públicos.</p>
+
+        <h3 class="text-xl font-bold">¿Qué es un client modificado? 🤖</h3>
+        <p>Un hacked client añade funciones como fly, kill aura, x-ray, entre otros.</p>
+
+        <h3 class="text-xl font-bold">¿Para qué sirven? 🛠️</h3>
+        <ul class="list-disc ml-6">
+          <li>Aprender programación</li>
+          <li>Experimentar funciones</li>
+          <li>Probar mecánicas en mundos privados</li>
+        </ul>
+
+        <h3 class="text-xl font-bold">Riesgos 🚫</h3>
+        <ul class="list-disc ml-6">
+          <li>Baneos permanentes</li>
+          <li>Bloqueo por IP</li>
+          <li>Virus y malware</li>
+          <li>Pérdida de progreso</li>
+        </ul>
+
+        <h3 class="text-xl font-bold text-green-400">DISFRÚTALO 😎🔥</h3>
+        <p>No olvides compartir esta página con más usuarios. Tu cuenta puede estar en riesgo si usas hacks en servidores públicos.</p>
+      </section>
+    </main>
+  </div>
+
+<script>
+  // Loading hacker screen
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loadingScreen').style.opacity = '0';
+      setTimeout(() => {
+        document.getElementById('loadingScreen').remove();
+      }, 600);
+    }, 1500);
+  });
+</script>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('sideMenu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('-translate-x-full');
+  });
+</script>
+
+<audio id="menuSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_bf6a58e3b0.mp3?filename=interface-124464.mp3"></audio>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('sideMenu');
+  const sound = document.getElementById('menuSound');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('-translate-x-full');
+    sound.currentTime = 0;
+    sound.play();
+  });
+</script>
+
+</body>
+</html>
